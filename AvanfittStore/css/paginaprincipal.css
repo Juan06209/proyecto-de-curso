@@ -1,14 +1,23 @@
-html, body {
-    background: url('/Multimedia/fondo1.jpg');
-    background-color: #f8f9fa;
-    color: #343a40;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-repeat: no-repeat;
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
+.contenedor {
+    background: url('../Multimedia/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 
-.form-group {
-    margin-bottom: 1.5rem;
-    position: relative;
+/* Media query para tamaños de pantalla pequeños (como celulares) */
+@media (max-width: 360px) {
+    .contenedor {
+        background-size: contain; /* Hace que la imagen se ajuste dentro del contenedor sin cubrir toda la pantalla */
+    }
 }
 
